@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { Menu, X } from 'lucide-react'
 import { Button } from "./ui/button"
-import  image  from "../asset/image.png"
+import  image  from "../assets/image.png"
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
