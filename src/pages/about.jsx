@@ -16,7 +16,7 @@ function AboutPage() {
             <div className="md:w-1/3">
               <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/placeholder.svg?height=300&width=300"
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400&q=80"
                   alt="Mr GRIOU Mohamed, Président de GRITEL"
                   className="w-full h-full object-cover"
                 />
