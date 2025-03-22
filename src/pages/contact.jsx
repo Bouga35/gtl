@@ -26,7 +26,7 @@ function ContactPage() {
                   <Phone className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium text-gray-900">Téléphone</h3>
-                    <p className="text-gray-700">+212 5XX XX XX XX</p>
+                    <p className="text-gray-700">+212 5 22 35 05 02</p>
                   </div>
                 </div>
 
@@ -104,7 +104,16 @@ function ContactPage() {
           <div className="w-full h-96 bg-gray-200 rounded-lg">
             {/* Placeholder for map */}
             <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500">
-              Carte Google Maps
+              
+              <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.0369708012786!2d-7.546790403210411!3d33.6043452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd192dd9a05b%3A0xf0cebfe246500412!2sGritel!5e0!3m2!1sen!2sma!4v1742615957836!5m2!1sen!2sma"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }} // JSX style syntax
+      allowFullScreen // JSX attribute syntax
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
             </div>
           </div>
         </div>

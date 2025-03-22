@@ -23,7 +23,7 @@ function ContactCTA() {
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-8">
             <div className="flex items-center justify-center gap-3 text-slate-300">
               <Phone className="h-5 w-5 text-blue-400" />
-              <span>+212 5XX XX XX XX</span>
+              <span>+212 5 22 35 05 02</span>
             </div>
           </div>
 

@@ -1,8 +1,28 @@
+import React from "react"
+
 import { Button } from "../components/ui/button"
 import { ArrowRight, Zap, Network, Cpu, Database } from 'lucide-react'
 import { Link } from "react-router-dom"
 
+
+
 function ServicesPage() {
+  const images = [
+    '/asset/bts.png', // Ensure paths are correct and relative to the public folder
+    '/asset/Camusat.jpg',
+    '/asset/chabakat.png',
+    
+    '/asset/finatech.jpg',
+    
+    '/asset/inb.jpg',
+    '/asset/inwi.png',
+    '/asset/isc.png',
+    '/asset/linfra.png',
+    '/asset/maroctelecom.png',
+    '/asset/ocp.png',
+    '/asset/Orange_logo.svg.png',
+    '/asset/telcam.png',
+  ];
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="max-w-4xl mx-auto">
@@ -88,15 +108,16 @@ function ServicesPage() {
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="bg-gray-100 p-4 rounded-lg flex items-center justify-center h-24">
-                <img
-                  src={`/placeholder.svg?height=60&width=120`}
-                  alt={`Client ${i}`}
-                  className="opacity-70 hover:opacity-100 transition-opacity"
-                />
-              </div>
-            ))}
+          {images.map((image, index) => (
+        <div key={index} className="bg-gray-100 p-4 rounded-lg flex items-center justify-center h-24">
+          <img
+            src={image}
+            alt={`Client ${index + 1}`}
+            className="opacity-70 hover:opacity-100 transition-opacity"
+            style={{ width: '120px', height: '60px' }} // Inline styles for width and height
+          />
+        </div>
+      ))}
           </div>
         </div>
 

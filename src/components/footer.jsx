@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { MapPin, Phone, Mail } from 'lucide-react'
+import  image  from "../asset/image.png"
 
 function Footer() {
   return (
@@ -9,10 +10,10 @@ function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="relative w-10 h-10">
-                <img src="/placeholder.svg?height=40&width=40" alt="GRITEL Logo" className="object-contain w-full h-full" />
+              <div className="relative w-24 h-10">
+                <img src={image} alt="GRITEL Logo" className="object-contain w-full h-full" />
               </div>
-              <span className="text-xl font-bold">GRITEL</span>
+              <span className="text-xl font-bold"></span>
             </div>
             <p className="text-slate-400 mb-4">
               Spécialiste des installations électriques et télécommunications depuis 2008.
@@ -68,11 +69,11 @@ function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-blue-400 mt-1 mr-2 flex-shrink-0" />
-                <span className="text-slate-400">Siège social - Aïn Sebaâ, Casablanca, Maroc</span>
+                <span className="text-slate-400">Bur 16 ETG 5 IMM C Rés. les Jardins de Ain Sbaa, Allé des Troènes Ain Sbaa-Casablanca, Maroc</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-blue-400 mr-2 flex-shrink-0" />
-                <span className="text-slate-400">+212 5XX XX XX XX</span>
+                <span className="text-slate-400">+212 5 22 35 05 02</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-blue-400 mr-2 flex-shrink-0" />

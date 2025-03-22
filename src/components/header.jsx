@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { Menu, X } from 'lucide-react'
 import { Button } from "./ui/button"
+import  image  from "../asset/image.png"
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,14 +16,15 @@ function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="relative w-10 h-10">
+            <div className="relative w-24 h-10">
               <img
-                src="/placeholder.svg?height=40&width=40"
+                src={image}
                 alt="GRITEL Logo"
                 className="object-contain w-full h-full"
+                
               />
             </div>
-            <span className="text-2xl font-bold text-slate-800">GRITEL</span>
+            <span className="text-2xl font-bold text-slate-800"></span>
           </Link>
 
           {/* Desktop Navigation */}
